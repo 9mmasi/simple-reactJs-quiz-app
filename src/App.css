@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
+  background:url(./stacked-peaks-haikei.svg);
+  padding-block: 5rem;
+  border-radius: 10px;
+  margin-inline: 14rem;
+  margin-top: 23px;
+ 
+  
+}
+.title{
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding-inline: 9rem;
+  padding-block: .7rem;
+  background: #6807f9;
+  color: #45eba5;
+  font-size:2.5rem;
+  font-weight: 500;
+  box-shadow: 10px 20px 40px 0.3px f0fff3;
+  
+}
+img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.menu{
+justify-content: center;
+align-items: center;
+}
+.menu>button{
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(185, 16, 185);
+  padding: 15px;
+  cursor: pointer;
+  border:none;
+  color: aliceblue;
+  transition: 0.5s ease;
+  
+
+
+}
+.menu>button:hover{
+  background-color: transparent;
+  border:1px solid rgb(185, 16, 185);
+  color:black;
+  transform: scale(1,1);
+  
+  
+}
+
+  .quiz>button{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #170630;
+    background:#5e094b;
+    border-radius: 5px;
+    padding:7px;
+    font-weight: 900;
+    font-size: large;
+    margin-top: 9px;
+
+  }
+  .quiz>button:hover{
+    background:#170630;
+    color: azure;
+    cursor: pointer;
+  }
+  .next_button{
+    position:relative;
+    left: 90%;
+    background: #6807f9!important;
+    color: aliceblue;
+  }
+.reset_btn{
+  display: flex;
+  flex-direction:column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background: #6807f9;
+  border:none;
+  color:whitesmoke;
+  cursor: pointer;
+  border-radius: 5px;
+  padding:7px;
+  font-weight: 900;
+  font-size: large;
+  margin-top: 9px;
 }
